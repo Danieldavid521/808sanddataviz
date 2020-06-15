@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "path": "posts/2020-06-15-effective-interactivedata-visualization-with-r/",
+    "title": "Effective InteractiveData Visualization with R",
+    "description": "With Rmarkdown, R, DataTables, and plotly",
+    "author": [
+      {
+        "name": "Daniel Jachetta",
+        "url": {}
+      }
+    ],
+    "date": "2020-06-15",
+    "categories": [
+      "plotly",
+      "ggplot2",
+      "Datatables"
+    ],
+    "preview": "posts/2020-06-15-effective-interactivedata-visualization-with-r/distill-preview.png",
+    "last_modified": "2020-06-15T16:22:47-05:00"
+  }
+]
