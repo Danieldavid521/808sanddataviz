@@ -1,0 +1,67 @@
+---
+title: "psychedelic text color in Rmarkdown"
+description: |
+  Using CSS and Rmarkdown to create psychedelic colors.
+author:
+  - name: Daniel Jachetta
+    url: {}
+date: 06-28-2020
+css: styles.css
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE, fig.align='center'}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+
+```{r}
+library(ggplot2)
+library(cowplot)
+library(magick)
+ggdraw() +
+  draw_image("lego.png") 
+```
+
+
+
+In order to get this specific distill article blog to point to the CSS file, It first needs to be assigned in the YAML header. A simplified YAML header is below. 
+
+````markdown
+---
+output: 
+  html_document:
+    css: style.css
+---
+````
+
+The .CSS file has to reside within the same directory as the .Rmd file, or atleast have a relative file path if it were to reside in a child directory.
+
+Below is the contents of the **`style.css`**. The *"d-article"* attribute was found by using the inspect element tool in Firefox, with a few trials and errors. Other Rmarkdown formats will require the appropriate attribute to be used in place of the *"d-article"* attribute.
+
+````css
+   d-article{
+   width:100%;
+   color:#313131;
+   font-size:18px;
+   position: absolute;
+   -webkit-animation:colorchange 20s infinite alternate;}
+   
+   @-webkit-keyframes colorchange {
+   0% {color: blue;}
+   10% {color: #8e44ad;}
+   20% {color: #1abc9c;}
+   30% {color: #d35400;}
+   40% {color: blue;}
+   50% {color: #34495e;}
+   60% {color: blue;}
+   70% {color: #2980b9;}
+   80% {color: #f1c40f;}
+   90% {color: #2980b9;}
+   100% {color: pink;}}
+````
+
+And that is it! This gives the webpage a dynamic feel, even though the changing text color isn't necessary, it was fun to learn how to create this type of effects.
