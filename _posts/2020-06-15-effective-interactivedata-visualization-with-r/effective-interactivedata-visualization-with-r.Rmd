@@ -1,0 +1,77 @@
+---
+title: "Effective InteractiveData Visualization with R"
+description: |
+  With Rmarkdown, R, DataTables, and plotly
+author:
+  - name: Daniel Jachetta
+    url: {}
+date: 06-15-2020
+css: styles.css
+categories:
+  - plotly
+  - ggplot2
+  - Datatables
+output:
+  distill::distill_article:
+    self_contained: TRUE
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+```
+
+
+
+
+This is the official first blog post of this blog! We will start out with a simple tutorial inspired from [Interactive web-based data visualization with R, plotly, and shiny by Carson Sievert Published by CRC press](https://plotly-r.com/).
+
+In this tutorial, we will use 3 packages:
+
+1. ggplot2
+2. plotly
+3. DT
+
+let's load them into R.
+
+```{r echo = TRUE}
+library(ggplot2)
+library(plotly)
+library(DT)
+```
+
+Below is the data visualization we will create with interactive capabilities, accompanied by a dynamic Datatable.
+
+```{r}
+ggplot(mpg,aes(displ,hwy))+geom_point(aes(color = cyl)) + geom_smooth(se = TRUE)
+```
+We will be using the `mpg` dataset for this example, which comes inside ggplot2. The first function we use is the `highlight_key()` function from plotly, which was written by the book author Carso Sievert. This function creates an object based on a primary key. In this example, we use the entire data frame.
+
+```{r echo=TRUE}
+m<-highlight_key(mpg)
+```
+
+Next we create a ggplot2 plot with `geom_point()`, where we map the cylinder of each car to the `color` arguement, and `geom_smooth` for the standard error line.
+
+```{r echo=TRUE}
+p<-ggplot(m,aes(displ,hwy))+geom_point(aes(color = cyl)) + geom_smooth(se = TRUE)
+```
+
+Next, `highlight()` is the function used for the brushing/highlighting multiple plots or points. we used the argument "plotly_selected".
+
+```{r echo=TRUE}
+gg<-highlight(ggplotly(p),"plotly_selected")
+```
+
+
+Finally we pass the previous 3 lines of code to `crosstalk::bscols()`, which is using Bootstrap and HTML to align our Datatable. The code below is all we have to write, 4 lines of code give us an interactive plot with brushing, and a dynamic table with sorting and searching.
+
+
+```{r echo=TRUE}
+m<-highlight_key(mpg)
+p<-ggplot(m,aes(displ,hwy))+geom_point(aes(color = cyl)) + geom_smooth(se = TRUE)
+gg<-highlight(ggplotly(p),"plotly_selected")
+crosstalk::bscols(gg,DT::datatable(m))
+```
+
