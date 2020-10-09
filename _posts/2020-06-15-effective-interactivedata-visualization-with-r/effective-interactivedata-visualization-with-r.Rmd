@@ -1,5 +1,5 @@
 ---
-title: "Effective InteractiveData Visualization with R"
+title: "Effective Interactive Data Visualization with R"
 description: |
   With Rmarkdown, R, DataTables, and plotly
 author:

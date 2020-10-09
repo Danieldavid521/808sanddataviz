@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2020-08-01-gauge-charts-in-googleviz/",
+    "title": "Creating gauge charts with googleviz",
+    "description": "Using googleViz package to create gauge charts.",
+    "author": [
+      {
+        "name": "Daniel Jachetta",
+        "url": {}
+      }
+    ],
+    "date": "2020-08-01",
+    "categories": [
+      "GoogleViz"
+    ],
+    "preview": "posts/2020-08-01-gauge-charts-in-googleviz/gauge-charts-in-googleviz_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2020-10-09T13:32:27-05:00"
+  },
+  {
     "path": "posts/2020-06-28-psychedelic-text-color-in-rmarkdown/",
     "title": "psychedelic text color in Rmarkdown",
     "description": "Using CSS and Rmarkdown to create psychedelic colors.",
@@ -10,13 +27,17 @@
       }
     ],
     "date": "2020-06-28",
-    "categories": [],
+    "categories": [
+      "Rmarkdown",
+      "CSS",
+      "HTML"
+    ],
     "preview": "posts/2020-06-28-psychedelic-text-color-in-rmarkdown/psychedelic-text-color-in-rmarkdown_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2020-07-11T11:56:06-05:00"
+    "last_modified": "2020-10-09T13:33:02-05:00"
   },
   {
     "path": "posts/2020-06-15-effective-interactivedata-visualization-with-r/",
-    "title": "Effective InteractiveData Visualization with R",
+    "title": "Effective Interactive Data Visualization with R",
     "description": "With Rmarkdown, R, DataTables, and plotly",
     "author": [
       {
@@ -31,6 +52,6 @@
       "Datatables"
     ],
     "preview": "posts/2020-06-15-effective-interactivedata-visualization-with-r/distill-preview.png",
-    "last_modified": "2020-06-15T16:22:50-05:00"
+    "last_modified": "2020-10-09T13:34:19-05:00"
   }
 ]
