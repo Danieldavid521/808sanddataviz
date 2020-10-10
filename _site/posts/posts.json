@@ -14,7 +14,7 @@
       "GoogleViz"
     ],
     "preview": "posts/2020-08-01-gauge-charts-in-googleviz/gauge-charts-in-googleviz_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2020-10-09T13:32:27-05:00"
+    "last_modified": "2020-10-09T15:22:34-05:00"
   },
   {
     "path": "posts/2020-06-28-psychedelic-text-color-in-rmarkdown/",
@@ -27,17 +27,13 @@
       }
     ],
     "date": "2020-06-28",
-    "categories": [
-      "Rmarkdown",
-      "CSS",
-      "HTML"
-    ],
+    "categories": [],
     "preview": "posts/2020-06-28-psychedelic-text-color-in-rmarkdown/psychedelic-text-color-in-rmarkdown_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2020-10-09T13:33:02-05:00"
+    "last_modified": "2020-07-12T21:59:57-05:00"
   },
   {
     "path": "posts/2020-06-15-effective-interactivedata-visualization-with-r/",
-    "title": "Effective Interactive Data Visualization with R",
+    "title": "Effective InteractiveData Visualization with R",
     "description": "With Rmarkdown, R, DataTables, and plotly",
     "author": [
       {
@@ -52,6 +48,6 @@
       "Datatables"
     ],
     "preview": "posts/2020-06-15-effective-interactivedata-visualization-with-r/distill-preview.png",
-    "last_modified": "2020-10-09T13:34:19-05:00"
+    "last_modified": "2020-07-12T21:59:57-05:00"
   }
 ]
