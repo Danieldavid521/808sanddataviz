@@ -1,5 +1,40 @@
 [
   {
+    "path": "posts/2021-02-04-daily-planner-in-rmarkdown/",
+    "title": "Daily Planner in Rmarkdown",
+    "description": {},
+    "author": [
+      {
+        "name": "Danieldavid521",
+        "url": {}
+      }
+    ],
+    "date": "2021-02-04",
+    "categories": [
+      "rmarkdown",
+      "flexdashboard"
+    ],
+    "preview": "posts/2021-02-04-daily-planner-in-rmarkdown/distill-preview.png",
+    "last_modified": "2021-04-22T10:49:48-05:00"
+  },
+  {
+    "path": "posts/2020-08-01-gauge-charts-in-googleviz/",
+    "title": "Creating gauge charts with googleviz",
+    "description": "Using googleViz package to create gauge charts.",
+    "author": [
+      {
+        "name": "Daniel Jachetta",
+        "url": {}
+      }
+    ],
+    "date": "2020-08-01",
+    "categories": [
+      "GoogleViz"
+    ],
+    "preview": "posts/2020-08-01-gauge-charts-in-googleviz/gauge-charts-in-googleviz_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2020-10-09T15:22:34-05:00"
+  },
+  {
     "path": "posts/2020-06-28-psychedelic-text-color-in-rmarkdown/",
     "title": "psychedelic text color in Rmarkdown",
     "description": "Using CSS and Rmarkdown to create psychedelic colors.",

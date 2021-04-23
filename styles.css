@@ -1,9 +1,58 @@
 .distill-site-nav  {
-  color: #000000;
+  color: #8B0074;
   background-color: #FFA500;
+    text-align: center;
+  size:24px;
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #000,
+    0 0 80px #000,
+    0 0 90px #000,
+    0 0 100px #000,
+    0 0 150px #000;
 }
 
   .distill-site-nav a:hover {
-    color: white;
+    color: #8B0074;
+      text-align: leftr;
+  size:24px;
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #000,
+    0 0 80px #000,
+    0 0 90px #000,
+    0 0 100px #000,
+    0 0 150px #000;
   }
+
+h1{
+  color: #2f5687;
+}   
+
+
+html body.layout-listing d-article {
+  background-color: #8B0074;
+}
   
+
+
+h1 {
+  text-align: center;
+  size:24px;
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #000,
+    0 0 80px #000,
+    0 0 90px #000,
+    0 0 100px #000,
+    0 0 150px #000;
+}
